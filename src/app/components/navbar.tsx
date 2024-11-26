@@ -6,23 +6,26 @@ import log from "@/app/assets/Untitled (5).png"
 
 export default function Navbar(){
     return(
-        <div className="w-[1900px] h-[90px] px-[220px] py-[16px] bg-[#052e16] flex justify-between items-center text-white ">
-            <div className="w-[500px] h-[90px] mx-[-70px] ">
+        <div className="w-[1900px] h-[90px] px-[220px] py-[16px] bg-[#052e16] flex justify-between items-center lg:h-[80px] text-white lg:w-screen w-full h-full sm:w-screen md:w-screen ">
+            <div className="w-[500px] h-[90px] mx-[-70px] lg:h-[70px] ">
                 <Link href="/"><Image src={logo} alt="image"></Image></Link>
         
             </div>
            
-            <div className="w-[737.5px] h-[60px] flex justify-between items-center ">
+            <div className="w-[737.5px] h-[60px] flex justify-between items-center  ">
                 <div className="w-[549px] h-[23px] mx-[-20%] ">
-                    <ul className="flex flex-row gap-[70px]   ">
+                    <ul className="flex flex-row gap-[70px] lg:mx-[420px]  ">
                         <div className="hover:bg-[#14532d] hover:scale-[110px] w-[70px] h-[30px] text-nowrap py-[-10px] hover:text-center hover:rounded-[10px] hover:p-[2px] ">
-                            <li className="font-bold text-[18px]"><Link href="/">Home</Link></li>
+                            <li className="font-bold text-[18px] "><Link href="/">Home</Link></li>
                         </div>
                         <div className="hover:bg-[#14532d] hover:scale-[110px] w-[70px] h-[30px] text-nowrap py-[-10px] hover:text-center hover:rounded-[10px] hover:p-[2px] ">
                             <li className="font-bold text-[18px]"><Link href="/About">About</Link></li>
                         </div>
                         <div className="hover:bg-[#14532d] hover:scale-[110px] w-[70px] h-[30px] text-nowrap py-[-10px] hover:text-center hover:rounded-[10px] hover:p-[2px] ">
                             <li className="font-bold text-[18px]"><Link href="/Contact">Contact</Link></li>
+                        </div>
+                        <div className="hover:bg-[#14532d] hover:scale-[110px] w-[70px] h-[30px] text-nowrap py-[-10px] hover:text-center hover:rounded-[10px] hover:p-[2px] ">
+                            <li className="font-bold text-[18px]"><Link href="/Projects">Projects</Link></li>
                         </div>
                     
                     
